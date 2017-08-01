@@ -40,7 +40,12 @@ app.get('/', (req, res) => {
   });
 });
 
-//The site is currently being updated, will be back soon
+app.get('/projects', (req, res) => {
+  // res.send('About Page');
+  res.render('projects.hbs',  {
+    pageTitle: 'Projects Page'
+  });
+});
 
 
 app.get('/about', (req, res) => {
